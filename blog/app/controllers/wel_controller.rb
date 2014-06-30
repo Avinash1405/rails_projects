@@ -1,0 +1,2 @@
+class WelController < ApplicationController
+end

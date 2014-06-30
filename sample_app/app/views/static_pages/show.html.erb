@@ -1,0 +1,16 @@
+<table style ="border: 2px solid green">
+	<thead>
+		<th>Name</th>
+		<th>Occupation</th>
+	</thead>
+	 <% @u.each do |us| %>
+	 <tbody>
+	<tr>
+		<td><%= us.name%></td>
+		<td><%= us.occupation%></td>
+		<td><%= link_to "show products", :controller => "static_pages", :action => "help",:user_id => us.id %></td>
+		<td><%= link_to "create products", :controller => "static_pages", :action => "createproduct",:new_id => us.id %></td>
+	</tr>
+	</tbody>
+	<% end %>
+</table>

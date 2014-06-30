@@ -1,0 +1,17 @@
+<h1>Shows all products of user</h1>
+<p><%= %></p>
+<table style ="border: 2px solid green">
+	<thead>
+		<th>product_name</th>
+		<th>product_value</th>
+	</thead>
+	<tbody>
+		 <% @pro.each do |us| %>
+		<tr>
+			<td><%= us.product_name%></td>
+			<td><%= us.value%></td>
+		</tr>
+		<% end %>
+	</tbody>
+
+</table>
